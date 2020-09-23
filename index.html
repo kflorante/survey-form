@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Survey Form</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+</head>
+<body>
+  <main>
+    <header>
+      <h1 id="title">Lingoda Survey Form</h1>
+      <p id="description">Thank for taking the time to help us improve the platform</p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input 
+          type="text"
+          id="name"
+          name="name"
+          placeholder="Enter your name"
+          required>
+      </div>
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input 
+          type="email" 
+          id="email"
+          name="email"
+          placeholder="Enter your Email"
+          required>
+      </div>
+      <div class="form-group">
+        <label for="age" id="number-label">Age</label>
+        <input 
+          type="number" 
+          id="number"
+          name="age"
+          min="10"
+          max="99"
+          placeholder="Age"
+          required>
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your current role?</p>
+        <select name="role" id="dropdown" required>
+          <option value="fulltime">Full-Time Job</option>
+          <option value="parttime">Part-Time Job</option>
+          <option value="selfemployed">Self-Employed</option>
+          <option value="student">Student</option>
+          <option value="homemaker">Homemaker</option>
+          <option value="retired">Retired</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>Would you recommend Lingoda to a friend?</p>
+        <label>
+          <input 
+            type="radio"
+            name="recommendation"
+            value="definitely"
+            checked>Definitely
+        </label>
+        <label>
+          <input 
+            type="radio"
+            name="recommendation"
+            value="maybe">Maybe
+        </label>
+        <label>
+          <input 
+            type="radio"
+            name="recommendation"
+            value="not-sure">Not Sure
+        </label>
+      </div>
+      <div class="form-group">
+        <p>What are your favorite features of Lingoda? <span>Check all that apply</span>
+        </p>
+        <label>
+          <input 
+            type="checkbox"
+            name="favorite-features"
+            value="online">Online
+        </label>
+        <label>
+          <input 
+            type="checkbox"
+            name="favorite-features"
+            value="small-classes">Small Classes
+        </label>
+        <label>
+           <input 
+             type="checkbox"
+             name="favorite-features"
+             value="qualified-teachers">Qualified Teachers
+        </label>
+        <label>
+          <input 
+            type="checkbox"
+            name="favorite-features"
+            value="free-trial-available">Free Trial Available
+        </label>
+        <label>
+          <input 
+            type="checkbox"
+            name="favorite-features"
+            value="flexibility">Flexible Class Schedule
+        </label>
+      </div>
+      <div class="form-group">
+        <p>Any comments or suggestions to improve our platform?</p>
+        <textarea name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
+      </div>
+      <div class="form-group">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+  </main>
+</body>
+</html>
