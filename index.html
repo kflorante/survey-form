@@ -8,7 +8,7 @@
   <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
 </head>
 <body>
-  <main>
+  <div class="container">
     <header>
       <h1 id="title">Lingoda Survey Form</h1>
       <p id="description">Thank for taking the time to help us improve the platform</p>
@@ -16,7 +16,8 @@
     <form id="survey-form">
       <div class="form-group">
         <label for="name" id="name-label">Name</label>
-        <input 
+        <input
+          class="form-control"
           type="text"
           id="name"
           name="name"
@@ -26,6 +27,7 @@
       <div class="form-group">
         <label for="email" id="email-label">Email</label>
         <input 
+          class="form-control"
           type="email" 
           id="email"
           name="email"
@@ -34,7 +36,8 @@
       </div>
       <div class="form-group">
         <label for="age" id="number-label">Age</label>
-        <input 
+        <input
+          class="form-control"
           type="number" 
           id="number"
           name="age"
@@ -45,7 +48,7 @@
       </div>
       <div class="form-group">
         <p>Which option best describes your current role?</p>
-        <select name="role" id="dropdown" required>
+        <select class="form-control" name="role" id="dropdown" required>
           <option value="fulltime">Full-Time Job</option>
           <option value="parttime">Part-Time Job</option>
           <option value="selfemployed">Self-Employed</option>
@@ -58,6 +61,7 @@
         <p>Would you recommend Lingoda to a friend?</p>
         <label>
           <input 
+            class="input-radio"
             type="radio"
             name="recommendation"
             value="definitely"
@@ -65,12 +69,14 @@
         </label>
         <label>
           <input 
+            class="input-radio"
             type="radio"
             name="recommendation"
             value="maybe">Maybe
         </label>
         <label>
           <input 
+            class="input-radio"
             type="radio"
             name="recommendation"
             value="not-sure">Not Sure
@@ -81,30 +87,35 @@
         </p>
         <label>
           <input 
+            class="input-checkbox"
             type="checkbox"
             name="favorite-features"
             value="online">Online
         </label>
         <label>
           <input 
+            class="input-checkbox"
             type="checkbox"
             name="favorite-features"
             value="small-classes">Small Classes
         </label>
         <label>
            <input 
+            class="input-checkbox"
              type="checkbox"
              name="favorite-features"
              value="qualified-teachers">Qualified Teachers
         </label>
         <label>
           <input 
+            class="input-checkbox"
             type="checkbox"
             name="favorite-features"
             value="free-trial-available">Free Trial Available
         </label>
         <label>
           <input 
+            class="input-checkbox"
             type="checkbox"
             name="favorite-features"
             value="flexibility">Flexible Class Schedule
@@ -112,12 +123,12 @@
       </div>
       <div class="form-group">
         <p>Any comments or suggestions to improve our platform?</p>
-        <textarea name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
+        <textarea class="input-textarea" name="comment" id="comments" placeholder="Enter your comment here..."></textarea>
       </div>
       <div class="form-group">
-        <button id="submit" type="submit">Submit</button>
+        <button class="submit-button" id="submit" type="submit">Submit</button>
       </div>
     </form>
-  </main>
+  </div>
 </body>
 </html>
