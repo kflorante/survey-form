@@ -17,8 +17,7 @@ body {
   margin: 0;
   line-height: 1.4;
   color: white;
-  height: 100%;
-  width: 100%;
+  background-attachment: fixed;
 }
 
 header {
